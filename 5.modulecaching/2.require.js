@@ -1,0 +1,11 @@
+const callsuperhero=require("./1.superhero")
+const batman=new callsuperhero("batman")
+console.log(batman.getName())
+batman.setName("bruce wayne")
+console.log(batman.getName())
+
+const call2superhero=require("./1.superhero")
+const superman=new call2superhero("superman")
+console.log(superman.getName())
+superman.setName("iron man")
+console.log(superman.getName())
