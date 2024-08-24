@@ -1,9 +1,6 @@
-const {fork}=require("child_process")
-
+const {fork} = require("child_process")
 const child=fork("./child.js")
-
-child.send({greeeting:"hello from parent"})
-
+child.send({command:"start"})
 child.on("message",(message)=>{
-    console.log("parent received message",message)
+    console.log("message from child",message)
 })
